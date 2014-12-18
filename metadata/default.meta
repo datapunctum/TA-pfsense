@@ -1,0 +1,589 @@
+# Application-level permissions
+
+[]
+access = read : [ * ], write : [ admin ]
+export = system
+
+[transforms/pfsense_filter_rule]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_rule]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_vendor_action]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_vendor_action]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_vendor_direction]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_vendor_direction]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[lookups/pfsense_filter_direction.csv]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[lookups/pfsense_syslog_app.csv]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[lookups/pfsense_filter_action.csv]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_action]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_direction]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/LOOKUP-pfsense_filter_action]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/LOOKUP-pfsense_filter_direction]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_dest_int]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_dest_int]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_tos]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_tos]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_ttl]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_ttl]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_transport]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_transport]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_src_ip]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_src_ip]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_dest_ip]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_dest_ip]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_src_port]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_src_port]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_dest_port]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_dest_port]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/FIELDALIAS-pfsense_filter_src]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/FIELDALIAS-pfsense_filter_dest]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/FIELDALIAS-pfsense_filter_dvc]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[eventtypes/pfsense_filter]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[tags/eventtype%3Dpfsense_filter]
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_facility]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_facility]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_openvpn_user_subject]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_openvpn_user_subject]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_user_subject]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_user_subject]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_src_ip]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_src_ip]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_src_ip_02]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_src_ip_02]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_user_subject_02]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_user_subject_03]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_user_subject_04]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_user_subject_02]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_user_subject_03]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_user_subject_04]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_src_ip_02]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_src_ip_02]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_dest_ip_02]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_dest_ip_02]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_transport_02]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_transport_02]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_user_subject_05]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_user_subject_05]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_src_ip_03]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_src_ip_03]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_user_subject_06]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_user_subject_06]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/FIELDALIAS-pfsense_syslog_user]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_bytes_in]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_bytes_in_02]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_bytes_in_02]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_bytes_in]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_bytes_out]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_bytes_out]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_bytes_out_02]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/REPORT-pfsense_filter_bytes_out_02]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_filter_vendor_info_lookup]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_vendor_info_lookup]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Afilter/LOOKUP-pfsense_filter_vendor_info_lookup]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/LOOKUP-pfsense_syslog_vendor_info_lookup]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[eventtypes/pfsense%3Afilter]
+version = 5.0.2
+
+[tags/eventtype%3Dpfsense%253Afilter]
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_vendor_action]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_vendor_action]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_action]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/LOOKUP-pfsense_syslog_action]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_vendor_action_02]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_vendor_action_02]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_vendor_action_03]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_vendor_action_03]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_vendor_action_04]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_vendor_action_04]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_vendor_action_05]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_vendor_action_05]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_vendor_app]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_vendor_app]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_vendor_app_02]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/REPORT-pfsense_syslog_vendor_app_02]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[transforms/pfsense_syslog_app]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/LOOKUP-pfsense_syslog_app]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/FIELDALIAS-pfsense_syslog_src]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[eventtypes/pfsense%3Asyslog_webconfigurator_login]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2
+
+[tags/eventtype%3Dpfsense%253Asyslog_webconfigurator_login]
+owner = nobody
+version = 5.0.2
+
+[props/pfsense%3Asyslog/FIELDALIAS-pfsense_syslog_dest]
+access = read : [ * ]
+export = system
+owner = nobody
+version = 5.0.2

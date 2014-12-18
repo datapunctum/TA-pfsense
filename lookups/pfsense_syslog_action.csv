@@ -1,0 +1,5 @@
+vendor_action,action
+Accepted,success
+Failed,failure
+error,failure
+Successful,success
