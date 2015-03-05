@@ -1,0 +1,9 @@
+vendor_tcp_flag,tcp_flag
+F,FIN
+S,SYN
+A,ACK
+R,RST
+P,PSH
+U,URG
+E,ECE
+W,CWR

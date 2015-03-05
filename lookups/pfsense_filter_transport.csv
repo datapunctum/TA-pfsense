@@ -1,0 +1,7 @@
+vendor_transport,transport
+udp,udp
+tcp,tcp
+TCP,tcp
+ICMPv6,icmp
+UDP,udp
+icmp,icmp
