@@ -1,0 +1,33 @@
+===Technology Add-on for pfSense===
+
+   Author: Mika Borner
+
+   Version/Date: 2.0 03/05/2015
+
+   Supported product(s): 
+                   pfSense 2.2.x (i386/amd64)
+		   NOTE: Use previous version of TA-pfsense for older pfSense releases!
+
+   Source type(s): pfsense:filterlog
+                   pfsense:dhcpd
+	           pfsense:openvpn
+		   pfsense:*
+
+   Input requirements: This release requires pfSense to forward events using syslog.
+
+   ===Using this Technology Add-on===
+
+   Configuration: Manual
+
+   - This app must be installed on Indexers, Searchheads and Heavy Forwarders
+
+   - Enable remote logging on pfsense (Status -> System logs -> Settings -> Enable Remote Logging
+   
+   - pfSense syslog messages must have the sourcetype pfsense assigned, e.g.
+
+	inputs.conf:
+ 
+	[udp://516]
+	index = network
+	sourcetype = pfsense
+
