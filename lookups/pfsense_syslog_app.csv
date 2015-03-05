@@ -1,3 +1,0 @@
-vendor_app, app
-php, pfsense:webconfigurator
-sshd, pfsense:ssh
