@@ -2,7 +2,7 @@
 
    Author: Mika Borner
 
-   Version/Date: 2.0.2 03/17/2015
+   Version/Date: 2.0.3 12/09/2015
 
    Supported product(s): 
                    pfSense 2.2.x
@@ -31,3 +31,7 @@
 	index = network
 	sourcetype = pfsense
 
+
+   ===Bugs===
+
+   Please open an issue at https://github.com/my2ndhead/TA-pfsense
