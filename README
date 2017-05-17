@@ -2,7 +2,7 @@
 
    Author: Mika Borner
 
-   Version/Date: 2.0.6 02/14/2016
+   Version/Date: 2.1.0 02/14/2016
 
    Supported product(s): 
                    pfSense 2.2.x
@@ -11,6 +11,8 @@
    Source type(s): pfsense:filterlog
                    pfsense:dhcpd
 	           pfsense:openvpn
+		   pfsense:nginx
+		   pfsense:unbound
 		   pfsense:*
 
    Input requirements: This release requires pfSense to forward events using syslog.
