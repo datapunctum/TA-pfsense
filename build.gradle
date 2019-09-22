@@ -1,0 +1,53 @@
+plugins {
+    id "base"
+}
+
+ext {
+    distVersion = "${version}"
+    distName = "TA-pfsense-${version}.spl"
+}
+
+task createDist(type: Tar, group: "Custom", description: "Creates the distribution archive") {
+    println "distName: ${distName}"
+    println "destinationDir: ${destinationDir}"
+
+    archiveName = "${distName}"
+    compression = Compression.GZIP
+
+    into("TA-pfsense/default") {
+        from "src/default/"
+        exclude '**/.DS_Store'
+        filter{ it.replaceAll('@version@', distVersion)}
+        fileMode = 0644
+    }
+
+    into("TA-pfsense/metadata") {
+        from "src/metadata/"
+        exclude 'local.meta', '**/.DS_Store'
+        fileMode = 0644
+    }
+
+    into("TA-pfsense/static") {
+        from "src/static/"
+        exclude '**/.DS_Store'
+        fileMode = 0644
+    }
+
+    into("TA-pfsense/") {
+        from "README.md"
+        exclude '**/.DS_Store'
+        filter{ it.replaceAll('@version@', distVersion)}
+        fileMode = 0644
+    }
+
+    into("TA-pfsense/") {
+        from "LICENSE"
+        exclude '**/.DS_Store'
+        fileMode = 0644
+    }
+}
+
+task inspectDist(type: Exec, group: "Custom", description: "Runs the splunk-appinspect verification", dependsOn: createDist) {
+    commandLine "splunk-appinspect", "inspect", "build/distributions/${distName}", "--mode", "precert", "--included-tags", "splunk_appinspect", "--output-file", "results.txt"
+    commandLine "splunk-appinspect", "inspect", "build/distributions/${distName}", "--mode", "precert", "--included-tags", "cloud", "--output-file", "results.txt"
+}

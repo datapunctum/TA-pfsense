@@ -1,3 +1,6 @@
-__pycache__/
-*.py[cod]
 local/
+local.meta
+.DS_Store
+build/
+.gradle
+results.txt
