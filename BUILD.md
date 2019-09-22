@@ -11,7 +11,7 @@
 ```./gradle createDist
 
 distName: TA-pfsense-1.0.0.spl
-destinationDir: <repositorypath>/TA-vectra-cognito/build/distributions
+destinationDir: <repositorypath>/TA-pfsense/build/distributions
 :createDist
 
 BUILD SUCCESSFUL

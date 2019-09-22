@@ -1,6 +1,6 @@
 # Technology Add-on for pfsense
 
-**Author:** Datapunctum Gmbh
+**Author:** Datapunctum GmbH
 
 **Version:**
 
@@ -16,6 +16,7 @@
 
 **Supported CIM Datamodels:**
 
+* Authentication
 * Network Traffic
 
 **Sourcetypes:**
@@ -57,7 +58,7 @@
 * **2.1.0 / 2017-05-17** mbo
 
   * Basic Nginx Support
-  * Basic Unbound Support 
+  * Basic Unbound Support
 
 * **2.2.0 / 2019-09-22** mbo
 
@@ -70,4 +71,3 @@
   * Additional Extracts for igmp and hbh
   * Fixed some timestamp stripping issues
   * Rebuild Build Process
-  
