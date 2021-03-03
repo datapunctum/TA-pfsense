@@ -4,3 +4,5 @@ local.meta
 build/
 .gradle
 results.txt
+.pytest_cache/v/cache/nodeids
+.pytest_cache/v/cache/stepwise

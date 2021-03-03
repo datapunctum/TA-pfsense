@@ -8,7 +8,7 @@
 
 **Supported products:**
 
-* pfsense >= 2.2.0
+* pfsense >= 2.5.0
 
 **Supported CIM Version:**
 
@@ -41,14 +41,19 @@
 
 * The add-on has to be installed on Search Heads
 * If data is collected through Intermediate Heavy Forwarders, it has to be installed on Heavy Forwarders, otherwise on indexers
-* The add-on expects an initial sourcetype named `pfsesnse`, the sourcetype will be transformed into more specific ones (see sourcetype list)
+* The add-on expects an initial sourcetype named `pfsense`, the sourcetype will be transformed into more specific ones (see sourcetype list)
 * A sample `inputs.conf` is provided (`default/inputs.conf.sample`)
 
 ## Compatibility
 
-* Compatible with pfsense 2.2.0 or higher
+* Compatible with pfsense 2.5.0 or higher
 
 ## Release Notes
+
+* **2.5.0 / 2021-03-03** mbo
+
+  * Support new filterlog format
+  * Added device extraction to DHCP Events
 
 * **2.0.0 / 2015-03-10** mbo
 
