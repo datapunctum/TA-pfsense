@@ -8,7 +8,7 @@
 
 **Supported products:**
 
-* pfsense >= 2.5.0
+* pfsense >= 2.5.1
 
 **Supported CIM Version:**
 
@@ -49,6 +49,9 @@
 * Compatible with pfsense 2.5.0 or higher
 
 ## Release Notes
+* **2.5.1 / 2022-03-30** mbo
+
+  * Added missing lookups
 
 * **2.5.0 / 2021-03-03** mbo
 

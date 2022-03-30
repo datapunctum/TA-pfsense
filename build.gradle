@@ -21,6 +21,12 @@ task createDist(type: Tar, group: "Custom", description: "Creates the distributi
         fileMode = 0644
     }
 
+    into("TA-pfsense/lookups") {
+        from "src/lookups/"
+        exclude '**/.DS_Store'
+        fileMode = 0644
+    }
+
     into("TA-pfsense/metadata") {
         from "src/metadata/"
         exclude 'local.meta', '**/.DS_Store'
